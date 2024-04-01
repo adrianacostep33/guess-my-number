@@ -1,8 +1,7 @@
-import { StyleSheet, View, Alert, Text, FlatList } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-
-import Title from "../components/ui/Title";
 import { useState, useEffect } from "react";
+import { StyleSheet, View, Alert, FlatList } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import Title from "../components/ui/Title";
 import NumberContainer from "../components/game/NumberContainer";
 import PrimaryButton from "../components/ui/PrimaryButton";
 import Card from "../components/ui/Card";
@@ -110,6 +109,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 12,
+    alignItems: "center",
   },
   title: {
     fontSize: 24,
@@ -119,6 +119,8 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#ddb52f",
     padding: 12,
+    maxWidth: "80%",
+    minWidth: "60%",
   },
   instructionText: {
     marginBottom: 12,
